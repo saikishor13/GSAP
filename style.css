@@ -1,0 +1,624 @@
+body{
+    background-color: black;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 99999;
+    top: 0%;
+    left: 0%;
+    background-color: rgb(6, 6, 6);
+    opacity: 1;
+    backdrop-filter: blur(16px);
+    padding: 19px 3.6px;
+    width: 100%;
+   
+    
+}
+
+.nav-left{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.nav-right{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.nav-middle{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.nav-left > button{
+    cursor: pointer;
+}
+
+.page{
+    width: 100%;
+    height: 100vh;
+    padding-top: 40px;
+}
+
+.pageone> .videoinside{
+    width: 100%;
+    height: 100%;
+    
+    position: relative;
+    transform-origin: 50% 100%;
+}
+
+.pageone> .videoinside video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 35px;
+}
+
+.elem{
+    overflow: hidden;
+}
+
+.videoinside-overlay{
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.videoinside-overlay> .elem> h1{
+    font-size: 5.62vw;
+    color:azure;
+    font-family: RDCR;
+    text-align: center;
+    font-weight: 500;
+    gap: 0;
+}
+
+.pagetwo{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 5vh;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pagetwo> .text> h1{
+    display: flex;
+    font-family: RDCR;
+    font-size: 4.6vh;
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.pagetwo > p{
+    font-family: Mint;
+    font-size: 16px;
+    text-align: center;
+    align-content: center;
+    margin:0% 30% ;
+    line-height: 1.7;
+    color: #ffffff;
+    
+}
+
+.image{
+    transition: all 1s ease;
+}
+
+.imageone, .imagetwo{
+    width: 65px;
+    height:80px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0px 12px;
+}
+
+.button{
+    font-family:Mint;
+    font-size:16px ;
+    background-color: transparent;
+    border: 1px solid;
+    height: 32px;
+    padding: 3px 12px 2px;
+    border-radius: 24px;
+    font-weight: 500;
+    color: #ffffff;
+
+}
+
+.button:hover{
+    background-color: rgb(40, 40, 40);
+}
+
+.pagethree{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 13vh;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.pagethree> h3{
+    font-family: RCDN;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    color: #ffffff;
+}
+
+.pagethree> content> h1{
+    font-family: RDCR;
+    font-size: 5.104vw;
+    font-weight: 500;
+    text-align: center;
+}
+
+.imageleft{
+    position: absolute;
+    width: 31.25vw;
+    height: 80%;
+    object-fit: cover;
+    z-index: 154;
+    left: -2%;
+    rotate: -4deg;
+    border-radius: 35px;
+}
+.imageright{
+    position: absolute;
+    width: 31.25vw;
+    height: 80%;
+    object-fit: cover;
+    z-index: 152;
+    right: -2%;
+    rotate: 4deg;
+    border-radius: 35px;
+}
+
+.pagefour{
+    width: 100vw;
+    padding: 0px ;
+    color: #ffffff;
+    margin: 0px;
+}
+
+.strip{
+    white-space:nowrap;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.strip> img{
+    width: 65px;
+    height: 80px;
+    margin-right: 40px;
+    animation: rrr 4s linear infinite;
+}
+
+.stripone{
+    animation: move 8s linear infinite;
+}
+.striptwo{
+    animation: move 8s linear infinite reverse;
+}
+
+.strip> h1{
+    font-size: 9.35vw;
+    display: inline-block;
+    font-family: Mint;
+    padding-right: 50px;
+    text-align: center;
+    font-weight: 500;
+
+}
+
+.pagefive{
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    color: #ffffff;
+}
+
+.pagefive >h1{
+    font-size: 13vw;
+    font-family: RCDN;
+    display: inline-block;
+    position: relative;
+    left: 160%;
+    font-weight: 500;
+
+}
+.pagesix{
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    color: #ffffff;
+}
+
+.pagesix >h1{
+    font-size: 13vw;
+    font-family: RCDN;
+    display: inline-block;
+    position: relative;
+    left: 160%;
+    font-weight: 500;
+
+}
+.pageseven{
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    color: #ffffff;
+}
+
+.pageseven >h1{
+    font-size: 13vw;
+    font-family: RCDN;
+    display: inline-block;
+    position: relative;
+    left: 160%;
+    font-weight: 500;
+
+}
+.pageeight{
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    color: #ffffff;
+}
+
+.pageeight >h1{
+    font-size: 13vw;
+    font-family: RCDN;
+    display: inline-block;
+    position: relative;
+    left: 160%;
+    font-weight: 500;
+
+}
+.pagenine{
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    color: #ffffff;
+}
+
+.pagenine >h1{
+    font-size: 13vw;
+    font-family: RCDN;
+    display: inline-block;
+    position: relative;
+    left: 160%;
+    font-weight: 500;
+
+}
+.pageten{
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    color: #ffffff;
+}
+
+.pageten >h1{
+    font-size: 13vw;
+    font-family: RCDN;
+    display: inline-block;
+    position: relative;
+    left: 160%;
+    font-weight: 500;
+
+}
+
+.pageeleven{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.pageeleven > h1{
+    font-family: Mint;
+    font-size: 10px;
+    scale: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pagetwel{
+    width: 100vw;
+    height:650vh ;
+    position: relative;
+    background-color: #ffffff;
+    padding-top:70px;
+}
+
+.pagetwel > img{
+    width: 28.6vw;
+    height: 75.4vh;
+    position: relative;
+    perspective: 1000px;
+}
+
+.imgone{
+    left:50%;
+    transform: translate(-50%,0%);
+    z-index: 1;
+    top: 10vh;
+}
+.imgtwo{
+    left:50%;
+    transform: translate(-50%,0%);
+    z-index: 2;
+    top: 150vh;
+}
+.imgthree{
+    left:50%;
+    transform: translate(-50%,0%);
+    z-index: 3;
+    top: 250vh;
+}
+.imgfour{
+    left:50%;
+    transform: translate(-50%,0%);
+    z-index: 4;
+    top: 350vh;
+}
+.imgfive{
+    left:50%;
+    transform: translate(-50%,0%);
+    z-index: 5;
+    top: 450vh;
+}
+
+.pagethirteen > video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.mask{
+    -webkit-mask-image:url(./star-svgrepo-com\ \(1\).svg);
+    mask-image: url(./star-svgrepo-com\ \(1\).svg);
+    -webkit-mask-size: 31.25vw;
+    z-index: 99999;
+    -webkit-mask-position:center;
+    -webkit-mask-repeat:no-repeat;
+    mask-repeat:no-repeat;
+}
+.pagefourteen > video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.masktwo{
+    -webkit-mask-image:url(./star-svgrepo-com\ \(1\).svg);
+    mask-image: url(./star-svgrepo-com\ \(1\).svg);
+    -webkit-mask-size: 31.25vw;
+    z-index: 99999;
+    -webkit-mask-position:center;
+    -webkit-mask-repeat:no-repeat;
+    mask-repeat:no-repeat;
+}
+.pagefifteen > video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 10% 30%;
+}
+
+.maskthree{
+    -webkit-mask-image:url(./star-svgrepo-com\ \(1\).svg);
+    mask-image: url(./star-svgrepo-com\ \(1\).svg);
+    -webkit-mask-size: 31.25vw;
+    z-index: 99999;
+    -webkit-mask-position:center;
+    -webkit-mask-repeat:no-repeat;
+    mask-repeat:no-repeat;
+}
+
+
+.pagesixteen{
+    background-color: black;
+}
+
+.pagesixteen-elem{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    border: 1px solid #ffffff;
+    border-left: none;
+    border-right: none;
+    position: relative;
+    color: #ffffff;
+}
+
+.sneak{
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    transition: all 0.2s ease;
+}
+
+.pagesixteen-elem:hover .sneak{
+    height: 100%;
+}
+
+.pagesixteen-elem:hover .smile{
+    display: none;
+}
+
+.pagesixteen-elem:hover {
+    justify-content: center;
+}
+.pagesixteen-elem:hover >.profile{
+    scale:2.5;
+    filter: blur(0px);
+}
+
+.pagesixteen-elem > h1 {
+    font-family: Mint;
+    font-size: 6vw;
+    font-weight:500;
+    mix-blend-mode: difference;
+}
+
+.profile{
+    width: 8.85vw;
+    height: 18.29vh;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 999;
+    filter: blur(2px);
+}
+
+.smile{
+    scale: 2;
+    animation: rrr 4s linear infinite;
+    mix-blend-mode: difference;
+}
+
+.lastpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+}
+
+.lastpage > h1{
+    display: inline-block;
+}
+
+.lastpage > h1 >span{
+
+    font-size: 10vw;
+    font-family: Mint;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.smilefirst{
+    position: absolute;
+    scale: 3;
+    top: 40%;
+    left: 42%;
+    z-index: 999;
+    mix-blend-mode: difference;
+    animation: none;
+    rotate: 0deg;
+}
+.smilesecond{
+    position: absolute;
+    scale: 3;
+    top: 40%;
+    left: 50%;
+    z-index: 999;
+    mix-blend-mode: difference;
+    animation: none;
+    rotate: 0deg;
+}
+
+.loader{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+#end{
+    scale: 30;
+    fill: #ffffff;
+}
+
+
+@keyframes move {
+    0%{
+        transform: translate(0%);
+    }
+    100% {
+        transform: translate(calc(100% - 70px));
+    }
+}
+@keyframes rrr {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(45deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-45deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+    
+}
